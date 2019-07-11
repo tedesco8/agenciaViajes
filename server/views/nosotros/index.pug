@@ -1,3 +1,26 @@
 extends ../layout/index
 block contenido
-    h1= pagina
+    main.container.mt-5
+        .row
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="Imagen de Nosotros", class="img-fluid")
+            .col-md-7
+                h1= pagina
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis nisl leo. Praesent quam purus, feugiat porta sagittis nec, faucibus in sem. Nunc maximus porttitor ante, sit amet feugiat diam convallis sed. 
+                p Integer elementum ornare nisl et aliquet. Vivamus pharetra justo nibh, non dapibus turpis blandit et. Praesent ornare posuere ipsum, vel pellentesque massa convallis eu. Ut ac tellus eu tortor feugiat tempor sit amet eu felis. Sed iaculis gravida tortor at condimentum. Donec ut magna vitae sem fringilla pulvinar ut sit amet mauris.
+                p Praesent leo metus, aliquam in nunc finibus, mollis consequat arcu. Mauris risus felis, scelerisque eget augue nec, fermentum consectetur neque. Aenean sem risus, consectetur pulvinar rhoncus mollis, semper in est.
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad
+                    p Nulla in lacus ultrices, varius nunc sed, commodo lacus. Integer bibendum leo volutpat ligula tempus, ac ornare tortor hendrerit.
+                .col-md-4
+                    img(src="img/icono_destinos.svg", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos
+                    p Nulla in lacus ultrices, varius nunc sed, commodo lacus. Integer bibendum leo volutpat ligula tempus, ac ornare tortor hendrerit.
+                .col-md-4
+                    img(src="img/icono_precios.svg", class="img-fluid mb-4")
+                    h2.mb-4 Mejor Precio
+                    p Nulla in lacus ultrices, varius nunc sed, commodo lacus. Integer bibendum leo volutpat ligula tempus, ac ornare tortor hendrerit.
