@@ -14,6 +14,14 @@ app.set('views', path.join(__dirname, './views'));
 //cargar carpeta estatica public
 app.use(express.static('public'));
 
+//muestra el ano actual
+app.use((req, res, next) => {
+    //crear nueva fecha
+    const fecha = new Date();
+    res.locals.fechaActual = fecha.getFullYear();
+    return next();
+})
+
 //cargar las rutas
 app.use('/', routes());
 
