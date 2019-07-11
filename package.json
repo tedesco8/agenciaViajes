@@ -1,0 +1,24 @@
+{
+  "name": "agenciaviajes",
+  "version": "1.0.0",
+  "description": "Sitio web para Agencias de Viajes desarrollado con Node.js, Express y Sequelize",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tedesco8/agenciaViajes.git"
+  },
+  "author": "Pablo Martin Tedesco Rodriguez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tedesco8/agenciaViajes/issues"
+  },
+  "homepage": "https://github.com/tedesco8/agenciaViajes#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  }
+}
