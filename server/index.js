@@ -2,9 +2,11 @@
 const express = require('express');
 const routes = require('./routes');
 const path = require('path');
+const configs = require('./config');
 
 //configuracion express
 const app = express();
+
 //habilitar pug
 app.set('view engine', 'pug');
 
@@ -13,6 +15,12 @@ app.set('views', path.join(__dirname, './views'));
 
 //cargar carpeta estatica public
 app.use(express.static('public'));
+
+//validar si estamos en desarrollo o en produccion
+const config = configs[app.get('env')];
+
+//creamos la variable para el sitio web
+app.locals.titulo = config.nombresitio;
 
 //muestra el ano actual
 app.use((req, res, next) => {
