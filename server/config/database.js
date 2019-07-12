@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 
 module.exports = new Sequelize('agenciadeviajes', 'root', 'root', {
     host: '127.0.0.1',
-    port: '8889',
+    port: '3306',
     dialect: 'mysql', 
     define:{
         timestimps: false
