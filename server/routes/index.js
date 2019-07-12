@@ -12,6 +12,12 @@ router.get('/nosotros', (req, res) => {
     });
 });
 
+router.get('/viajes', (req, res) => {
+    res.render('viajes', {
+        pagina: 'Proximos Viajes'
+    });
+});
+
 return router;
 
 }
