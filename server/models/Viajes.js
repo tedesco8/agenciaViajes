@@ -23,6 +23,8 @@ const Viaje = db.define('viaje', {
     disponibles: {
         type: Sequelize.STRING
     }
+}, {
+    timestamps: false
 });
 
 module.exports = Viaje;
