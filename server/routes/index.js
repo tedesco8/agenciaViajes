@@ -30,6 +30,12 @@ router.get('/viajes/:id', (req, res) => {
         .catch(error => console.log(error));
 });
 
+router.get('/testimoniales', (req, res) => {
+    res.render('testimoniales', {
+        pagina: 'Testimoniales'
+    });
+});
+
 return router;
 
 }
