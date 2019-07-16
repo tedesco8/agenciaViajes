@@ -36,6 +36,29 @@ router.get('/testimoniales', (req, res) => {
     });
 });
 
+router.post('/testimoniales', (req, res) => {
+    //validar que todos los campos esten llenos
+    let {nombre, correo, mensaje} = req.body;
+
+    let errores = [];
+    if(!nombre) {
+        errores.push({'mensaje' : 'Agrega tu Nombre'})
+    }
+    if(!correo) {
+        errores.push({'mensaje' : 'Agrega tu Correo'})
+    }
+    if(!mensaje) {
+        errores.push({'mensaje' : 'Agrega tu Mensaje'})
+    }
+
+    //revisar por errores
+    if(errores.length > 0) {
+        //muestra la vista con errores
+    } else {
+        //almacenamos en la BD
+    }
+})
+
 return router;
 
 }

@@ -2,6 +2,7 @@
 const express = require('express');
 const routes = require('./routes');
 const path = require('path');
+const bodyParser = require('body-parser');
 const configs = require('./config');
 
 // db.authenticate()
@@ -33,6 +34,9 @@ app.use((req, res, next) => {
     res.locals.fechaActual = fecha.getFullYear();
     return next();
 })
+
+//ejecutamos el bodyparser
+app.use(bodyParser.urlencoded({extended: true}));
 
 //cargar las rutas
 app.use('/', routes());
