@@ -54,6 +54,12 @@ router.post('/testimoniales', (req, res) => {
     //revisar por errores
     if(errores.length > 0) {
         //muestra la vista con errores
+        res.render('testimoniales', {
+            errores,
+            nombre,
+            correo,
+            mensaje
+        })
     } else {
         //almacenamos en la BD
     }

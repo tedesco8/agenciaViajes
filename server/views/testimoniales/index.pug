@@ -10,10 +10,10 @@ block contenido
                         form(action='/testimoniales', method="POST")
                             .form-group
                                 label(for="nombre") Nombre
-                                input(id="nombre", class="form-control", type="text", placeholder="Tu Nombre", name="nombre")
+                                input(id="nombre", class="form-control", type="text", placeholder="Tu Nombre", name="nombre", value=nombre)
                                 label(for="correo") Correo Electrónico
-                                input(id="correo", class="form-control", type="email", placeholder="Tu Correo Electrónico", name="correo")
+                                input(id="correo", class="form-control", type="email", placeholder="Tu Correo Electrónico", name="correo", value=correo)
                                 label(for="mensaje") Mensaje
-                                textarea#mensaje(name="mensaje", class="form-control", rows="3", placeholder="Tu Mensaje")
+                                textarea#mensaje(name="mensaje", class="form-control", rows="3", placeholder="Tu Mensaje")=mensaje
                             input.btn.btn-success.btn-block(type="submit", value="Agregar")
                                 
