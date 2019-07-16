@@ -11,6 +11,8 @@ const Testimonial = db.define('testimoniales', {
     mensaje: {
         type: Sequelize.STRING
     },
+}, {
+    timestamps: false
 });
 
 module.exports = Testimonial
