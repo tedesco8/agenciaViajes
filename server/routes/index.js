@@ -32,9 +32,11 @@ router.get('/viajes/:id', (req, res) => {
 });
 
 router.get('/testimoniales', (req, res) => {
-    res.render('testimoniales', {
-        pagina: 'Testimoniales'
-    });
+    Testimonial.findAll()
+        .then(testimoniales => res.render('testimoniales', {
+            pagina: 'Testimoniales',
+            testimoniales
+        }))
 });
 
 router.post('/testimoniales', (req, res) => {
