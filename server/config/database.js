@@ -1,9 +1,9 @@
 const Sequelize = require('sequelize');
 
 
-module.exports = new Sequelize('agenciadeviajes', 'tedescodev', '0235pp', {
-    host: '82.194.90.10',
-    port: '3306',
+module.exports = new Sequelize(process.env.DB, process.env.USR_DB, process.env.PWD_DB, {
+    host: process.env.HS,
+    port: process.env.PORT,
     dialect: 'mysql', 
     define:{
     timestimps: false

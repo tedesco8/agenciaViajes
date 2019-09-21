@@ -42,4 +42,4 @@ app.use(bodyParser.urlencoded({extended: true}));
 //cargar las rutas
 app.use('/', routes());
 
-app.listen(4000);
+app.listen(process.env.PORT_DEF);
