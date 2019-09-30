@@ -4,7 +4,7 @@
   "description": "Sitio web para Agencias de Viajes desarrollado con Node.js, Express y Sequelize",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
